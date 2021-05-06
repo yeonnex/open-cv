@@ -68,5 +68,18 @@ cv.waitKey(20) 반드시 필요하다. 얼마의 시간동안 프레임 하나�
 
 > 또한, 파이썬에서 R,G,B 지정시, (B,G,R)의 순서로 지정해야 한다.
 
+## Color Spaces
+openCV에서는 이미지를 BGR 로 나타낸다. 하지만, 다른 데서는 모두 RGB 를 사용하기 때문에 만약 openCV의 imshow 가 아닌 파이플롯의 imshow 로 이미지를 나타내려 할 경우, 채널이 바뀌어서 나타나게된다.
+
+![](2021-05-06-16-47-05.png)
+왼쪽의 openCV의 이미지는 BGR 이미지이고, 오른쪽의 경우 RGB 로 그림을 표현하려 했기 떄문에 발생하는 문제이다.
+
+그렇기에 여러 라이브러리들을 사용할 때 컬러스페이스에 대해 항상 생각해주어야한다!!!
+
+## bit-wise operation
+openCV에서 비트 연산으로 마스킹을 할 수 있다.
+
+## HOW TO DETECT FACES IN OPENCV with Harr Cascades
+
 
 
